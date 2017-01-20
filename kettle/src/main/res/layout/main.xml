@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/temp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/temp_off" />
+    <LinearLayout
+        android:id="@+id/main_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+<!--        <ImageView
+            android:id="@+id/onoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/off" />-->
+        <ImageView
+            android:id="@+id/auto_pump"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/auto_pump_off" />
+<!--        <ImageView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/temp_off" />-->
+        <ImageView
+            android:id="@+id/pump"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/pump_off" />
+        <ImageView
+            android:id="@+id/heat"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/heat_off" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/onoff"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/off" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:text="Stop" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/forcolor"
+    tools:context=".MainActivity" >
+
+<!--    android:layout_width="170dp"
+    android:layout_height="170dp"
+    android:layout_marginLeft="40dp"-->
+
+    <LinearLayout
+        android:id="@+id/main_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/onoff"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/off" />
+        <ImageView
+            android:id="@+id/auto_pump"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/auto_pump_off" />
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:text="025"
+            android:gravity="right"
+            android:textColor="@color/RED"
+            android:textSize="70dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ccc"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginLeft="13dp"
+                android:text="C"
+                android:gravity="right"
+                android:textColor="@color/RED"
+                android:textSize="70dp" />
+            <ImageView
+                android:id="@+id/frame_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/circle_t" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/pump"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/pump_off" />
+        <ImageView
+            android:id="@+id/heat"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/heat_off" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="打开悬浮" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:text="关闭悬浮" />
+    <Button
+        android:id="@+id/darkblue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:text="darkblue" />
+    <Button
+        android:id="@+id/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="200dp"
+        android:text="white" />
+    <Button
+        android:id="@+id/navy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="300dp"
+        android:text="NAVY" />
+</RelativeLayout>
